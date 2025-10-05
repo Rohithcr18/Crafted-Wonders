@@ -1,0 +1,215 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  color: var(--text-color, #222);
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(150, 167, 141, 0.1);
+  border: 1px solid var(--accent-color, #D9E9CF);
+  transition: all 0.3s ease;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Global styles - no hover effects */
+.nav-link:hover {
+  background-color: transparent !important;
+}
+
+.card:hover {
+  transform: none !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Global button normalization (no animations, keep size constant) */
+button,
+.button,
+.buyButton,
+.deleteButton,
+.removeBtn,
+.buyBtn {
+  background-color: var(--primary-color, #96A78D);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  -webkit-tap-highlight-color: transparent;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  transform: none !important;
+  transition: none !important;
+  animation: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+  box-sizing: border-box;
+}
+
+/* Keep sizes the same on hover/active/focus */
+.button:hover,
+.button:active,
+.button:focus,
+.buyButton:hover,
+.buyButton:active,
+.buyButton:focus,
+.deleteButton:hover,
+.deleteButton:active,
+.deleteButton:focus,
+.removeBtn:hover,
+.removeBtn:active,
+.removeBtn:focus,
+.buyBtn:hover,
+.buyBtn:active,
+.buyBtn:focus,
+button:hover,
+button:active,
+button:focus,
+.button:hover,
+.button:active,
+.button:focus,
+.buyButton:hover,
+.buyButton:active,
+.buyButton:focus,
+.deleteButton:hover,
+.deleteButton:active,
+.deleteButton:focus,
+.removeBtn:hover,
+.removeBtn:active,
+.removeBtn:focus,
+.buyBtn:hover,
+.buyBtn:active,
+.buyBtn:focus {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 4px 12px rgba(150, 167, 141, 0.3) !important;
+  outline: none !important;
+  background-color: var(--secondary-color, #B6CEB4);
+}
+
+/* Smooth transitions only for non-button elements */
+.card,
+.nav-link {
+  transition: all 0.3s ease;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background-color, #F0F0F0);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color, #96A78D);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary-color, #B6CEB4);
+}
+
+/* Focus states for inputs */
+input:focus,
+select:focus {
+  border-color: var(--primary-color, #96A78D) !important;
+  box-shadow: 0 0 0 3px rgba(150, 167, 141, 0.2) !important;
+  outline: none;
+}
+
+/* Global input styling */
+input,
+select,
+textarea {
+  background-color: #96A78D !important;
+  color: white !important;
+}
+
+/* Responsive design improvements */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)) !important;
+    gap: 20px !important;
+    padding: 0 15px !important;
+  }
+
+  .card {
+    margin: 0 auto;
+    max-width: 300px;
+  }
+
+  .buttonContainer {
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+
+  .button,
+  .buyButton {
+    width: 100% !important;
+  }
+
+  .navbar {
+    flex-direction: column !important;
+    gap: 8px !important;
+    padding: 10px !important;
+  }
+
+  .navLink {
+    font-size: 0.9em !important;
+    padding: 6px 12px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 8px !important;
+  }
+
+  .navLink {
+    font-size: 0.85em !important;
+    padding: 5px 10px !important;
+  }
+}

@@ -1,0 +1,153 @@
+
+:root {
+  --primary-color: #96A78D;
+  --secondary-color: #B6CEB4;
+  --accent-color: #D9E9CF;
+  --background-color: #F0F0F0;
+  --text-color: #222;
+  
+  font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: var(--text-color);
+  background: var(--background-color);
+  font-synthesis: none;
+}
+/* Professional content sections */
+.hero {
+  width: 100vw;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+  color: #fff;
+  padding: 60px 0 40px 0;
+  box-shadow: 0 4px 24px rgba(150, 167, 141, 0.2);
+}
+.hero-content {
+  max-width: 700px;
+  text-align: center;
+}
+.hero-title {
+  font-size: 3.5em;
+  font-weight: 800;
+  margin-bottom: 0.3em;
+  color: #fff;
+}
+.hero-subtitle {
+  font-size: 1.5em;
+  color: #e3f2fd;
+  margin-bottom: 1.2em;
+}
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin: 40px auto;
+  max-width: 1100px;
+}
+.feature-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(150, 167, 141, 0.15);
+  padding: 30px 24px;
+  width: 320px;
+  text-align: left;
+  transition: all 0.3s ease;
+  border: 1px solid var(--accent-color);
+}
+.feature-card:hover {
+  box-shadow: 0 8px 30px rgba(150, 167, 141, 0.25);
+  transform: translateY(-5px);
+}
+.feature-title {
+  font-size: 1.3em;
+  color: var(--primary-color);
+  margin-bottom: 0.5em;
+}
+.feature-desc {
+  color: #444;
+  font-size: 1em;
+}
+.footer {
+  width: 100vw;
+  background: var(--primary-color);
+  color: #fff;
+  text-align: center;
+  padding: 30px 0 20px 0;
+  font-size: 1.1em;
+  margin-top: 60px;
+  box-shadow: 0 -2px 12px rgba(150, 167, 141, 0.2);
+}
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--background-color) 0%, #ffffff 100%);
+}
+
+button:focus,
+button:focus-visible {
+  outline: 3px solid var(--primary-color);
+h1, h2, h3, h4 {
+  font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 0.5em;
+}
+
+h1 {
+  font-size: 3em;
+  line-height: 1.1;
+  letter-spacing: 1px;
+}
+  max-width: 700px;
+  text-align: center;
+}
+h2 {
+  font-size: 2.2em;
+}
+  margin-bottom: 0.3em;
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin: 40px auto;
+  max-width: 1100px;
+}
+.feature-card {
+  background: #fff;
+  border-radius: 12px;
+button {
+  border-radius: 8px;
+  border: 1px solid #0d6efd;
+  padding: 0.7em 1.4em;
+  font-size: 1em;
+  font-weight: 600;
+  font-family: inherit;
+  background: linear-gradient(90deg, #0d6efd 80%, #198754 100%);
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(13,110,253,0.08);
+  transition: background 0.3s, box-shadow 0.3s;
+}
+}
+.feature-desc {
+  color: #444;
+  font-size: 1em;
+button:hover {
+  background: linear-gradient(90deg, #198754 80%, #0d6efd 100%);
+  box-shadow: 0 4px 16px rgba(13,110,253,0.18);
+}
+  color: #fff;
+  text-align: center;
+  padding: 30px 0 20px 0;
+  font-size: 1.1em;
+button:focus,
+button:focus-visible {
+  outline: 3px solid #0d6efd;
+}
